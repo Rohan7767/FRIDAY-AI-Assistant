@@ -15,7 +15,7 @@ import sys
 import re
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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"
+    api_key="sk-or-v1-###############################################"
 )
 sys.stdout = open(sys.stdout.fileno(), mode='w', encoding='utf-8', buffering=1)
 engine = pyttsx3.init()
@@ -23,8 +23,8 @@ engine.setProperty("rate", 190)
 engine.setProperty("volume", 1.0)
 voices = engine.getProperty("voices")
 engine.setProperty("voice", voices[1].id)
-SPOTIFY_CLIENT_ID = "76feac936baf453ca2cf982b8c729de9"
-SPOTIFY_CLIENT_SECRET = "07a45397308643b9812c0602dda6d01e"
+SPOTIFY_CLIENT_ID = "7###########################################"
+SPOTIFY_CLIENT_SECRET = "0##############################################"
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
     client_id=SPOTIFY_CLIENT_ID,
     client_secret=SPOTIFY_CLIENT_SECRET,
